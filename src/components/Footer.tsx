@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-gradient">Alex Rivera</h3>
+            <h3 className="text-xl font-bold text-gradient">Anthony Makori</h3>
             <p className="text-muted-foreground leading-relaxed">
               Full-Stack Developer passionate about creating exceptional digital experiences 
               with modern technologies and innovative solutions.
@@ -88,7 +88,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>alex.rivera@example.com</p>
+              <p>anthony.makori@example.com</p>
               <p>+1 (555) 123-4567</p>
               <p>San Francisco, CA</p>
             </div>
@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm">
-              © 2024 Alex Rivera. All rights reserved.
+              © 2024 Anthony Makori. All rights reserved.
             </p>
             <p className="text-muted-foreground text-sm flex items-center mt-4 md:mt-0">
               Made with <Heart className="h-4 w-4 text-primary mx-1" /> using React & Tailwind CSS

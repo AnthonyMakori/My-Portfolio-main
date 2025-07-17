@@ -54,7 +54,7 @@ const Navigation = () => {
             }}
             className="text-xl font-bold text-gradient hover-scale"
           >
-            Alex Rivera
+            Anthony Makori
           </a>
 
           {/* Desktop Navigation */}

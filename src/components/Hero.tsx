@@ -16,8 +16,8 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-            <span className="text-gradient">Alex</span>{" "}
-            <span className="text-foreground">Rivera</span>
+            <span className="text-gradient">Anthony</span>{" "}
+            <span className="text-foreground">Makori</span>
           </h1>
           
           <p className="text-2xl md:text-3xl text-muted-foreground mb-4 font-medium">
