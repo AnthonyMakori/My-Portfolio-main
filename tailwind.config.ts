@@ -63,6 +63,20 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				mono: ['JetBrains Mono', 'Consolas', 'monospace'],
+			},
+			backgroundImage: {
+				'hero-gradient': 'var(--hero-gradient)',
+				'accent-gradient': 'var(--accent-gradient)',
+				'text-gradient': 'var(--text-gradient)',
+			},
+			boxShadow: {
+				'glow-primary': 'var(--glow-primary)',
+				'glow-accent': 'var(--glow-accent)',
+				'card': 'var(--shadow-card)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
