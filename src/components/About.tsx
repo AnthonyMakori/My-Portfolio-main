@@ -36,20 +36,12 @@ const About = () => {
           {/* Profile Photo Section */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative group">
-              {/* Main photo container */}
-              <div className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-card hover:shadow-2xl transition-smooth">
-                <img 
-                  <Display />
-                
-                {/* Gradient overlay */}
+              <div className="relative w-[28rem] h-[36rem] rounded-2xl overflow-hidden shadow-card hover:shadow-2xl transition-smooth">
+                <Display />
                 <div className="absolute inset-0 bg-accent-gradient opacity-20 group-hover:opacity-10 transition-smooth" />
-                
-                {/* Floating accent elements */}
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary/20 rounded-full blur-xl" />
                 <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-accent/20 rounded-full blur-xl" />
-              </div>
-              
-              {/* Background decorative element */}
+              </div>           
               <div className="absolute -inset-4 bg-accent-gradient opacity-10 rounded-2xl -z-10 group-hover:opacity-20 transition-smooth" />
             </div>
           </div>

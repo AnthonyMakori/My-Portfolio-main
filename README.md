@@ -2,7 +2,7 @@
 
 Welcome to my **personal portfolio website** – a modern, responsive, and beautifully crafted web application built with **Vite + React**. This portfolio showcases my work, skills, and experience in a clean and elegant design.
 
-![Portfolio Screenshot](./screenshot.png) <!-- Optional: Add your screenshot image here -->
+![Portfolio Screenshot](./src/assets/home.png) 
 
 ---
 

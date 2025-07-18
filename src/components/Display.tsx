@@ -3,23 +3,23 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ChefHat, Sparkles } from 'lucide-react';
 
 const imageData = [
-  { src: '/src/assets/foods/arancini.jpg' },
-  { src: '/src/assets/foods/bruschetta.jpg' },
-  { src: '/src/assets/foods/burger.jpg', },
-  { src: '/src/assets/foods/calamari.jpg' },
-  { src: '/src/assets/foods/cheesecake.jpg'},
-  { src: '/src/assets/foods/coffee.jpg'},
-  { src: '/src/assets/foods/craft-beer.jpg' },
-  { src: '/src/assets/foods/fruit-tart.jpg' },
-  { src: '/src/assets/foods/lava-cake.jpg' },
-  { src: '/src/assets/foods/padthai.jpg'},
-  { src: '/src/assets/foods/risotto.jpg' },
-  { src: '/src/assets/foods/salmon.jpg' },
-  { src: '/src/assets/foods/smoothie.jpg' },
-  { src: '/src/assets/foods/steak.jpg' },
-  { src: '/src/assets/foods/tiramisu.jpg' },
-  { src: '/src/assets/foods/wine.jpg' },
-  { src: '/src/assets/foods/wings.jpg' }
+  { src: '/src/assets/cars/blue f.jpg' },
+  { src: '/src/assets/cars/blue s.jpeg' },
+  { src: '/src/assets/cars/dark.jpg', },
+  { src: '/src/assets/cars/front.jpg' },
+  { src: '/src/assets/cars/green.jpg'},
+  { src: '/src/assets/cars/grey.jpg'},
+  { src: '/src/assets/cars/lambo1.jpg' },
+  { src: '/src/assets/cars/lambos.jpg' },
+  { src: '/src/assets/cars/large.jpg' },
+  { src: '/src/assets/cars/red f.jpg'},
+  { src: '/src/assets/cars/red3.jpg' },
+  { src: '/src/assets/cars/redone.jpeg' },
+  { src: '/src/assets/cars/sport blue.jpg' },
+  { src: '/src/assets/cars/sport g.jpg' },
+  { src: '/src/assets/cars/white f.jpg' },
+  { src: '/src/assets/cars/wine.jpg' },
+  { src: '/src/assets/cars/white.jpg' }
 ];
 
 const Display: React.FC = () => {
