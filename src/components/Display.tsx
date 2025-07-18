@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ChefHat, Sparkles } from 'lucide-react';
 
 const imageData = [
-  { src: '/src/assets/foods/arancini.jpg', description: 'Arancini - Fried rice balls stuffed with cheese.' },
+  { src: '/src/assets/foods/arancini.jpg' },
   { src: '/src/assets/foods/bruschetta.jpg' },
   { src: '/src/assets/foods/burger.jpg', },
   { src: '/src/assets/foods/calamari.jpg' },
@@ -31,7 +31,7 @@ const Display: React.FC = () => {
     const interval = setInterval(() => {
       setDegrees((prev) => prev - 45);
       setCurrentIndex((prev) => (prev + 1) % imageData.length);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
@@ -108,18 +108,6 @@ const Display: React.FC = () => {
     transform: 'rotate(225deg) translate(-2.5px, 2.5px)'
   };
 
-  const descriptionStyle: React.CSSProperties = {
-    marginTop: '40px',
-    padding: '20px',
-    maxWidth: '400px',
-    textAlign: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.85)',
-    borderRadius: '10px',
-    fontSize: '1.1rem',
-    fontWeight: 'bold',
-    color: '#333'
-  };
-
   return (
     <div
       className="w-full px-4"
@@ -157,7 +145,6 @@ const Display: React.FC = () => {
             >
               <img
                 src={item.src}
-                alt={item.description}
                 style={{
                   position: 'absolute',
                   top: 0,
@@ -180,11 +167,6 @@ const Display: React.FC = () => {
           <div style={btnStyle} onClick={handleNext}>
             <div style={nextArrow}></div>
           </div>
-        </div>
-
-        {/* Description */}
-        <div style={descriptionStyle}>
-          {imageData[currentIndex].description}
         </div>
       </div>
     </div>
