@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Download, Code, Palette, Server, Users, Award, Coffee } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import Display from "./Display";
+
 
 const About = () => {
   const skills = [
@@ -37,10 +39,7 @@ const About = () => {
               {/* Main photo container */}
               <div className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-card hover:shadow-2xl transition-smooth">
                 <img 
-                  src={profilePhoto} 
-                  alt="Anthony Makori - Full Stack Developer" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-500"
-                />
+                  <Display />
                 
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-accent-gradient opacity-20 group-hover:opacity-10 transition-smooth" />
