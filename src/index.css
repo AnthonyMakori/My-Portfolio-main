@@ -49,19 +49,12 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -111,6 +104,108 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 5% 96%;
     --sidebar-border: 240 4% 16%;
     --sidebar-ring: 217 91% 60%;
+  }
+
+  /* Purple Theme */
+  .theme-purple {
+    --primary: 270 95% 60%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 290 90% 70%;
+    --accent-foreground: 0 0% 100%;
+    --accent-gradient: linear-gradient(135deg, hsl(270 95% 60%), hsl(290 90% 70%));
+    --text-gradient: linear-gradient(135deg, hsl(270 95% 60%), hsl(290 90% 70%));
+    --glow-primary: 0 0 40px hsl(270 95% 60% / 0.4);
+    --glow-accent: 0 0 40px hsl(290 90% 70% / 0.3);
+    --ring: 270 95% 60%;
+  }
+
+  .theme-purple.dark {
+    --background: 260 25% 8%;
+    --foreground: 280 20% 98%;
+    --card: 260 20% 12%;
+    --card-foreground: 280 20% 98%;
+    --popover: 260 20% 12%;
+    --popover-foreground: 280 20% 98%;
+    --primary: 270 95% 70%;
+    --primary-foreground: 260 25% 8%;
+    --secondary: 260 15% 15%;
+    --secondary-foreground: 280 20% 98%;
+    --muted: 260 15% 15%;
+    --muted-foreground: 270 15% 65%;
+    --accent: 290 90% 80%;
+    --accent-foreground: 260 25% 8%;
+    --border: 260 13% 18%;
+    --input: 260 13% 18%;
+    --hero-gradient: linear-gradient(135deg, hsl(260 25% 8%), hsl(260 20% 12%));
+    --shadow-card: 0 10px 30px -10px hsl(260 25% 4% / 0.5);
+  }
+
+  /* Blue Theme */
+  .theme-blue {
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 200 100% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-gradient: linear-gradient(135deg, hsl(210 100% 50%), hsl(200 100% 60%));
+    --text-gradient: linear-gradient(135deg, hsl(210 100% 50%), hsl(200 100% 60%));
+    --glow-primary: 0 0 40px hsl(210 100% 50% / 0.4);
+    --glow-accent: 0 0 40px hsl(200 100% 60% / 0.3);
+    --ring: 210 100% 50%;
+  }
+
+  .theme-blue.dark {
+    --background: 215 30% 8%;
+    --foreground: 210 20% 98%;
+    --card: 215 25% 12%;
+    --card-foreground: 210 20% 98%;
+    --popover: 215 25% 12%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 100% 65%;
+    --primary-foreground: 215 30% 8%;
+    --secondary: 215 20% 15%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 20% 15%;
+    --muted-foreground: 210 15% 65%;
+    --accent: 200 100% 70%;
+    --accent-foreground: 215 30% 8%;
+    --border: 215 13% 18%;
+    --input: 215 13% 18%;
+    --hero-gradient: linear-gradient(135deg, hsl(215 30% 8%), hsl(215 25% 12%));
+    --shadow-card: 0 10px 30px -10px hsl(215 30% 4% / 0.5);
+  }
+
+  /* Green Theme */
+  .theme-green {
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 120 100% 40%;
+    --accent-foreground: 0 0% 100%;
+    --accent-gradient: linear-gradient(135deg, hsl(142 76% 36%), hsl(120 100% 40%));
+    --text-gradient: linear-gradient(135deg, hsl(142 76% 36%), hsl(120 100% 40%));
+    --glow-primary: 0 0 40px hsl(142 76% 36% / 0.4);
+    --glow-accent: 0 0 40px hsl(120 100% 40% / 0.3);
+    --ring: 142 76% 36%;
+  }
+
+  .theme-green.dark {
+    --background: 150 25% 8%;
+    --foreground: 140 20% 98%;
+    --card: 150 20% 12%;
+    --card-foreground: 140 20% 98%;
+    --popover: 150 20% 12%;
+    --popover-foreground: 140 20% 98%;
+    --primary: 142 76% 50%;
+    --primary-foreground: 150 25% 8%;
+    --secondary: 150 15% 15%;
+    --secondary-foreground: 140 20% 98%;
+    --muted: 150 15% 15%;
+    --muted-foreground: 140 15% 65%;
+    --accent: 120 100% 55%;
+    --accent-foreground: 150 25% 8%;
+    --border: 150 13% 18%;
+    --input: 150 13% 18%;
+    --hero-gradient: linear-gradient(135deg, hsl(150 25% 8%), hsl(150 20% 12%));
+    --shadow-card: 0 10px 30px -10px hsl(150 25% 4% / 0.5);
   }
 }
 

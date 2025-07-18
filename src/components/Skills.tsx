@@ -21,8 +21,14 @@ const Skills = () => {
       skills: [
         { name: "React/Next.js", level: 95 },
         { name: "TypeScript", level: 90 },
+        { name: "JavaScript (ES6+)", level: 95 },
         { name: "Tailwind CSS", level: 95 },
         { name: "Vue.js", level: 80 },
+        { name: "Angular", level: 75 },
+        { name: "SASS/SCSS", level: 85 },
+        { name: "HTML5/CSS3", level: 95 },
+        { name: "Responsive Design", level: 90 },
+        { name: "Progressive Web Apps", level: 80 },
       ]
     },
     {
@@ -32,8 +38,14 @@ const Skills = () => {
       skills: [
         { name: "Node.js", level: 90 },
         { name: "Python", level: 85 },
+        { name: "Express.js", level: 88 },
+        { name: "Django/FastAPI", level: 80 },
         { name: "PostgreSQL", level: 88 },
         { name: "MongoDB", level: 82 },
+        { name: "Redis", level: 75 },
+        { name: "GraphQL", level: 85 },
+        { name: "REST APIs", level: 95 },
+        { name: "Microservices", level: 80 },
       ]
     },
     {
@@ -42,9 +54,15 @@ const Skills = () => {
       color: "text-primary",
       skills: [
         { name: "AWS/Vercel", level: 85 },
+        { name: "Google Cloud Platform", level: 80 },
         { name: "Docker", level: 80 },
-        { name: "CI/CD", level: 75 },
         { name: "Kubernetes", level: 70 },
+        { name: "CI/CD", level: 75 },
+        { name: "GitHub Actions", level: 85 },
+        { name: "Terraform", level: 70 },
+        { name: "Nginx", level: 75 },
+        { name: "Linux/Unix", level: 80 },
+        { name: "Monitoring & Logging", level: 75 },
       ]
     },
     {
@@ -53,9 +71,15 @@ const Skills = () => {
       color: "text-accent",
       skills: [
         { name: "Figma", level: 90 },
+        { name: "Adobe Creative Suite", level: 85 },
         { name: "UI/UX Design", level: 85 },
         { name: "Prototyping", level: 88 },
+        { name: "User Research", level: 80 },
+        { name: "Wireframing", level: 85 },
+        { name: "Design Systems", level: 90 },
         { name: "Adobe XD", level: 75 },
+        { name: "Sketch", level: 70 },
+        { name: "Framer", level: 75 },
       ]
     },
   ];
@@ -67,6 +91,12 @@ const Skills = () => {
     { name: "Figma", icon: Palette },
     { name: "Postman", icon: Settings },
     { name: "React Native", icon: Smartphone },
+    { name: "Jira/Notion", icon: Settings },
+    { name: "Slack/Discord", icon: Settings },
+    { name: "Chrome DevTools", icon: Monitor },
+    { name: "Webpack/Vite", icon: Settings },
+    { name: "Jest/Cypress", icon: Settings },
+    { name: "ESLint/Prettier", icon: Code },
   ];
 
   return (
