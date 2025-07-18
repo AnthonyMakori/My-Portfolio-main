@@ -36,19 +36,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "anthony.makori@example.com",
-      href: "mailto:anthony.makori@example.com"
+      value: "techstack842@gmail.com",
+      href: "mailto:techstack842@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+254 707 497 200",
+      href: "tel:+254707497200"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Nairobi, kenya",
       href: "#"
     }
   ];
@@ -57,19 +57,19 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/AnthonyMakori",
       color: "hover:text-primary"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/anthony-makori-126a72355/",
       color: "hover:text-primary"
     },
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com",
+      href: "https://x.com/M90140Makori",
       color: "hover:text-primary"
     }
   ];
@@ -115,7 +115,7 @@ const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      placeholder="your.email@example.com"
+                      placeholder="youremail@example.com"
                       required
                       className="bg-secondary border-border focus:border-primary"
                     />

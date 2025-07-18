@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Download, Code, Palette, Server } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import Display from "./Display";
 
 const About = () => {
   const skills = [
@@ -25,13 +26,9 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Photo */}
-          <div className="flex justify-center lg:justify-start">
+          <div className=" lg:justify-start">
             <div className="relative">
-              <img
-                src={profilePhoto}
-                alt="Profile"
-                className="w-80 h-80 object-cover rounded-2xl shadow-card hover-scale"
-              />
+              <Display />
               <div className="absolute inset-0 rounded-2xl bg-accent-gradient opacity-20" />
             </div>
           </div>

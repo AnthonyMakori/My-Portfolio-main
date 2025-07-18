@@ -5,17 +5,17 @@ const Footer = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/AnthonyMakori",
     },
     {
       icon: Linkedin,
       label: "LinkedIn", 
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/anthony-makori-126a72355/",
     },
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com",
+      href: "https://x.com/M90140Makori",
     },
   ];
 
@@ -88,9 +88,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>anthony.makori@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>techstack842@gmail.com</p>
+              <p>+254 707 497 200</p>
+              <p>Nairobi, Kenya</p>
             </div>
           </div>
         </div>
