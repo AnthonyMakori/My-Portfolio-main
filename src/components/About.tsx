@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Download, Code, Palette, Server, Users, Award, Coffee } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 import Display from "./Display";
+import Link from "next/link";
 
 
 const About = () => {
@@ -72,7 +73,7 @@ const About = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
+              <Link
               href="/Anthony Makori Latest CV.docx"
               download="Anthony Makori Latest CV.docx"
               className="inline-block"
@@ -84,7 +85,7 @@ const About = () => {
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
-              </a>
+              </Link>
               <Button 
                 variant="outline" 
                 size="lg"

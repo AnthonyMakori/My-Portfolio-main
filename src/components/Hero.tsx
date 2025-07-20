@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download, Mail } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import Link from "next/link";
 
 const Hero = () => {
   function scrollToSection(selector: string): void {
@@ -47,7 +48,7 @@ const Hero = () => {
               Hire Me
             </Button>
             
-            <a
+            <Link
               href="/tonny resume.docx"
               download="tonny resume.docx"
               className="inline-block"
@@ -60,7 +61,7 @@ const Hero = () => {
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
         
