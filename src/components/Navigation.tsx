@@ -78,6 +78,7 @@ const Navigation = () => {
               <Button 
                 size="sm" 
                 className="bg-accent-gradient hover:glow-accent transition-smooth"
+                onClick={() => scrollToSection("#contact")}
               >
                 Hire Me
               </Button>

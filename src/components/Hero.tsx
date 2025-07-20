@@ -3,6 +3,13 @@ import { ArrowDown, Download, Mail } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
+  function scrollToSection(selector: string): void {
+    const element = document.querySelector(selector);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
@@ -33,19 +40,27 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-accent-gradient hover:glow-primary transition-smooth text-lg px-8 py-3"
+              onClick={() => scrollToSection("#contact")}
+
             >
               <Mail className="mr-2 h-5 w-5" />
               Hire Me
             </Button>
             
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth text-lg px-8 py-3"
+            <a
+              href="/tonny resume.docx"
+              download="tonny resume.docx"
+              className="inline-block"
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download CV
-            </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth text-lg px-8 py-3"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </Button>
+            </a>
           </div>
         </div>
         

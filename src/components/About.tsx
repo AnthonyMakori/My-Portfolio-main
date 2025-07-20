@@ -72,6 +72,11 @@ const About = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
+              <a
+              href="/Anthony Makori Latest CV.docx"
+              download="Anthony Makori Latest CV.docx"
+              className="inline-block"
+            >
               <Button 
                 size="lg" 
                 className="bg-accent-gradient hover:glow-accent transition-smooth hover-scale"
@@ -79,6 +84,7 @@ const About = () => {
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
+              </a>
               <Button 
                 variant="outline" 
                 size="lg"
