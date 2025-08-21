@@ -27,50 +27,50 @@ const Testimonials = () => {
 
   const defaultTestimonials = [
     {
-      name: "Sarah Chen",
+      name: "Robina Damacline",
       role: "Product Manager",
-      company: "TechCorp",
-      content: "Alex delivered exceptional results on our e-commerce platform. Their attention to detail and technical expertise made the entire process smooth and efficient.",
+      company: "Kenya Revenue Authority",
+      content: "Anthony delivered exceptional results on our i-tax systems. His attention to detail and technical expertise has made his working period with us tramendously outstanding ensuring we improve and achieve more on what we had earlier not put much conciderations on.",
       rating: 5,
       avatar: "/api/placeholder/150/150"
     },
     {
-      name: "Michael Rodriguez",
+      name: "Michael Murigi",
       role: "CTO",
-      company: "StartupXYZ",
-      content: "Working with Alex was a game-changer for our startup. They built a scalable solution that perfectly aligned with our vision and business goals.",
+      company: "Datanet Systems Ltd ",
+      content: "Working with Anthony was a game-changer for our company. He built scalable solutions that perfectly aligned with our vision and business goals that further saw us making much improvements.",
       rating: 5,
       avatar: "/api/placeholder/150/150"
     },
     {
-      name: "Emily Johnson",
+      name: "Emily Muchiri",
       role: "Design Lead",
-      company: "Creative Agency",
-      content: "Alex has an incredible ability to translate design concepts into flawless code. The collaboration was seamless and the final product exceeded expectations.",
+      company: "Sahara Ventures ",
+      content: "Makori has an incredible ability to translate design concepts into flawless code. The collaboration was seamless and the final product exceeded expectations.",
       rating: 5,
       avatar: "/api/placeholder/150/150"
     },
     {
-      name: "David Kim",
-      role: "Founder",
-      company: "InnovateLabs",
-      content: "The quality of work and professionalism Alex brings to every project is outstanding. They consistently deliver on time and within budget.",
+      name: "Rabin Lucas",
+      role: "C.E.O",
+      company: "Falcon Eye Philmz",
+      content: "The quality of work and professionalism Anthony brings to every project is outstanding. He consistently deliver on time and within budget.",
       rating: 5,
       avatar: "/api/placeholder/150/150"
     },
     {
-      name: "Lisa Thompson",
-      role: "Marketing Director",
-      company: "GrowthCo",
-      content: "Alex's full-stack expertise helped us build a robust analytics platform. Their insights into both frontend and backend development were invaluable.",
+      name: "Nazrah Nyang'wara",
+      role: "Data Scientist",
+      company: "Kenya Revenue Authority",
+      content: "Makori's full-stack expertise helped us build a robust analytics platform. His insights into both frontend and backend development were invaluable in enabling us automate processes that had earlier proven to be somehow impossible.Just Exemplary work.",
       rating: 5,
       avatar: "/api/placeholder/150/150"
     },
     {
-      name: "James Wilson",
+      name: "Kevin Ruto",
       role: "Tech Lead",
-      company: "Enterprise Solutions",
-      content: "Exceptional developer with strong problem-solving skills. Alex's code is clean, well-documented, and maintainable. Highly recommended!",
+      company: "Swisskenko Ltd ",
+      content: "Exceptional developer with strong problem-solving skills. Makori's code is clean, well-documented, and maintainable. Highly recommended!",
       rating: 5,
       avatar: "/api/placeholder/150/150"
     },

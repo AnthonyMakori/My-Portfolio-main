@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
+import project4 from "@/assets/project-4.png";
 import project5 from "@/assets/project-5.jpg";
 import project6 from "@/assets/project-6.jpg";
 
@@ -36,16 +36,16 @@ const Projects = () => {
       githubUrl: "#",
     },
     {
-      title: "Portfolio Website",
-      description: "Responsive portfolio showcasing projects with smooth animations and modern design.",
+      title: "Agri Dom",   
+      description: "Agri Dom is a platform that enables Farmers to track all their produce, Input and output of all types of farming that can be done in either small scale or large scale farming.",
       image: project4,
       tech: ["React", "Framer Motion", "Tailwind", "Vercel"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Analytics Dashboard",
-      description: "Data visualization platform with interactive charts and real-time business metrics.",
+      title: " Bandwidth Analytics Dashboard",
+      description: "Data visualization platform with interactive charts and real-time business metrics to allow network companies efficiently assign and monitoe bandwidth usage of their clients while equally maintaining high credibility, performance and speed of internet access.",
       image: project5,
       tech: ["Vue.js", "D3.js", "Python", "FastAPI"],
       liveUrl: "#",
@@ -53,7 +53,7 @@ const Projects = () => {
     },
     {
       title: "AI Chatbot Interface",
-      description: "Intelligent chatbot with natural language processing and contextual responses.",
+      description: "Intelligent chatbot with natural language processing and contextual responses intergrated in AI financial advisor. Helps users to plan and manage their funds effectively in real time.",
       image: project6,
       tech: ["React", "OpenAI", "Node.js", "WebSocket"],
       liveUrl: "#",

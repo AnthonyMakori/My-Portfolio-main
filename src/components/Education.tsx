@@ -8,9 +8,8 @@ const Education = () => {
       degree: "Bachelor of Science in Computer Science",
       institution: "Masinde Muliro University Of Science and Technology",
       location: "Kakamega, Kenya",
-      period: "2022 - Current",
       gpa: "3.8/4.0",
-      achievements: ["New Technology Analyst", "Innovation Academy Challenge Winner", "Best Project Development",],
+      achievements: ["New Technology Analyst", "Innovation Academy Challenge Winner", "Best Project Development", "Deans Merit List 2019/2020 Academic Year"],
       description:
         "Specialized in Software Engineering and Web Development. Completed capstone projects on AI-powered web applications. Learnt and Developed using different progamming technologies and languages.",
       certifications: ["C", "C++", "Java", "Python", "OOP", "HTML5", "SQL", "SQLite", "Database"],
@@ -19,7 +18,6 @@ const Education = () => {
       degree: "Web3 Development Bootcamp",
       institution: "Memoi Africa",
       location: "Online",
-      period: "2024Jun-2024-Dec",
       gpa: "4.0/4.0",
       achievements: ["Top Graduate", "Best Final Project"],
       description:
@@ -30,7 +28,6 @@ const Education = () => {
       degree: "Full Stack Web Development Bootcamp",
       institution: "Code Academy",
       location: "Online",
-      period: "2024Jan-2024-Jun",
       gpa: "4.0/4.0",
       achievements: ["Top Graduate", "Best Final Project"],
       description:
@@ -41,7 +38,6 @@ const Education = () => {
       degree: "Full Stack Web Development Bootcamp",
       institution: "W3 Schools",
       location: "Online",
-      period: "2023June-2023Dec",
       gpa: "4.0/4.0",
       achievements: ["Top Graduate", "Best Final Project"],
       description:
@@ -53,7 +49,6 @@ const Education = () => {
       degree: "Mobile Development",
       institution: "Amazon",
       location: "Online",
-      period: "2023Feb-2023-Apr",
       gpa: "4.0/4.0",
       achievements: ["Top Graduate", "Best Final Project"],
       description:
@@ -65,7 +60,6 @@ const Education = () => {
       degree: "Mobile Development Bootcamp",
       institution: "Devtown",
       location: "Online",
-      period: "2022Oct-2023Jan",
       gpa: "4.0/4.0",
       achievements: ["Top Graduate", "Best Final Project"],
       description:
@@ -77,7 +71,6 @@ const Education = () => {
       degree: "High School Diploma",
       institution: "Kisii High School",
       location: "Kisii, Kenya",
-      period: "2018-2022",
       gpa: "3.9/4.0",
       achievements: ["Valedictorian", "National Honor Society"],
       description:
@@ -127,7 +120,7 @@ const Education = () => {
                       </h3>
                       <div className="flex items-center text-muted-foreground text-sm">
                         <Calendar className="h-4 w-4 mr-1" />
-                        {edu.period}
+                      
                       </div>
                     </div>
 

@@ -5,66 +5,70 @@ import { Calendar, MapPin, Briefcase, TrendingUp } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Scientist",
+      title: "Software Engineer",
       company: "Kenya Revenue Authority (KRA)",
-      department: "Data Science Section",
+      department: "iTax Department ",
+      period: "2025",
       location: "Nairobi, Kenya",
-      period: "2023 - Present",
-      type: "Current Position",
       description: "Leading data science initiatives to optimize tax collection and compliance through advanced analytics and machine learning solutions.",
       achievements: [
-        "Developed predictive models for tax compliance scoring",
-        "Implemented automated data pipelines for revenue analytics",
-        "Created dashboards for executive decision-making",
-        "Led cross-functional teams in data-driven projects"
+        "Spearheaded the enhancement of iTax decisioning systems, improving accuracy in taxpayer processing and significantly reducing errors in compliance workflows.",
+        "Oversaw the rollout of critical digital tax services that broadened accessibility and streamlined tax filing for millions of Kenyan taxpayers, including underserved segments.",
+        "Implemented data-driven product development methodologies that accelerated delivery timelines, reducing release cycles from months to weeks and ensuring timely responses to evolving tax policy and user requirements.",
+        "Designed and optimized iTax system architecture to efficiently handle millions of daily taxpayer transactions with high reliability and minimal latency.",
+        "Implemented event-driven processing and caching mechanisms to enhance real-time tax data validation, reconciliation, and reporting.",
+        "Developed automated compliance validation tools and reporting dashboards, significantly reducing manual oversight and ensuring policy enforcement at scale."
       ],
-      technologies: ["Python", "R", "SQL", "Machine Learning", "Power BI", "Azure"]
+      technologies: ["Python", "R", "SQL", "Machine Learning", "Power BI", "Azure","Laravel", "React", "Node.js", "Docker", "Kubernetes"]
     },
     {
-      title: "Statistical Analyst",
+      title: "Full Stack Software Developer",
       company: "Kenya Revenue Authority (KRA)",
-      department: "Statistics and Reporting Section",
+      department: "Data Science Department",
       location: "Nairobi, Kenya",
-      period: "2021 - 2023",
-      type: "Previous Role",
-      description: "Specialized in statistical analysis and reporting to support revenue collection strategies and policy formulation.",
+      period: "2024-2025",
+      description: "contributed to the design and development of mission-critical platforms supporting tax compliance, revenue collection, and data-driven decision-making.",
       achievements: [
-        "Generated comprehensive statistical reports for management",
-        "Analyzed revenue trends and patterns across different sectors",
-        "Developed automated reporting systems",
-        "Collaborated with various departments for data insights"
+        "Developed a taxpayer-centric system to streamline interactions, case management, and compliance support.",
+        "Designed and deployed a system for managing tax compliance cases, audits, and investigations.",
+        "Developed a platform to support tax revenue monitoring, reconciliation, and reporting.",
+        "Built a platform to support taxpayer outreach campaigns (email, SMS, and digital channels)."
       ],
-      technologies: ["Excel", "SPSS", "Tableau", "SQL", "Statistical Analysis"]
+      technologies: ["Excel", "SPSS", "Tableau", "SQL", "Statistical Analysis","Django", "React","Laravel","Vue.js"]
     },
     {
-      title: "Full-Stack Developer",
-      company: "Freelance Projects",
-      department: "Independent Contractor",
-      location: "Remote",
-      period: "2020 - Present",
-      type: "Freelance",
-      description: "Delivering custom web applications and digital solutions for various clients across different industries.",
+      title: "Team Lead",
+      company: "Cybermonk Software Development ",
+      department: "Software Development",
+      location: "Mombasa, Kenya",
+      period: "2024",
+      type: "Full Time",
+      description: "delivering enterprise-grade platforms that enhanced operational efficiency for clients in sectors such as logistics, fintech, and hospitality.",
       achievements: [
-        "Built 50+ responsive web applications",
-        "Developed e-commerce platforms with payment integration",
-        "Created management systems for small businesses",
-        "Maintained 98% client satisfaction rate"
+        "Transformed a low-performing team into a high-output unit, raising sprint completion rates from 40% to 95% within four months through process restructuring, coaching, and agile discipline.",
+        "Established mentorship and peer-learning programs that elevated technical expertise and supported the career growth of junior engineers.",
+        "Designed and deployed cloud-native platforms tailored for high-volume, real-time operations common in regional e-commerce and financial services.",
+        "Delivered live tracking systems using WebSocket technology, enabling real-time visibility for logistics and transport clients with large concurrent user bases",
+        "Built and managed automated CI/CD pipelines that reduced release cycles from hours to minutes, significantly accelerating client delivery timelines.",
+        "Delivered scalable digital solutions that reduced operational costs and improved ROI for Mombasa-based and regional clients."
       ],
       technologies: ["React", "Node.js", "TypeScript", "MongoDB", "AWS"]
     },
     {
-      title: "Junior Developer",
-      company: "Tech Solutions Ltd",
+      title: "Senior Software Engineer",
+      company: "Seven Seas Technologies (SST Group)",
       department: "Development Team",
       location: "Nairobi, Kenya",
-      period: "2019 - 2021",
+      period: "2024",
       type: "Full-time",
-      description: "Started career as a junior developer, gaining hands-on experience in software development and project management.",
+      description: "Engineered large-scale enterprise applications supporting healthcare and financial service operations, with a focus on reliability, security, and compliance",
       achievements: [
-        "Contributed to 20+ successful project deliveries",
-        "Mentored new team members",
-        "Implemented responsive UI components",
-        "Optimized application performance"
+        "Engineered large-scale enterprise applications supporting healthcare and financial service operations, with a focus on reliability, security, and compliance.",
+        "Modernized legacy platforms by migrating them to cloud-native architectures, improving system resilience and reducing infrastructure costs.",
+        "Developed and deployed API-first solutions, enabling seamless connectivity between government, financial, and healthcare platforms.",
+        "Integrated biometric and identity-verification systems to strengthen compliance and improve user authentication.",
+        "Introduced continuous testing frameworks, significantly improving defect detection during early development stages.",
+        "Led technical workshops for cross-functional teams, sharing best practices and reinforcing engineering standards."
       ],
       technologies: ["JavaScript", "PHP", "MySQL", "Bootstrap", "Git"]
     }

@@ -1,22 +1,137 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Download, Code, Palette, Server, Users, Award, Coffee } from "lucide-react";
+import { Download, Code, Palette, Server, Users, Award, Coffee, Wrench, GitBranch, Smartphone, CheckCircle } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 import Display from "./Display";
 
 
 const About = () => {
   const skills = [
-    { category: "Frontend", icon: Code, items: ["React", "TypeScript", "Next.js", "Tailwind CSS"] },
-    { category: "Backend", icon: Server, items: ["Node.js", "Python", "PostgreSQL", "MongoDB"] },
-    { category: "Design", icon: Palette, items: ["Figma", "Adobe XD", "UI/UX", "Prototyping"] },
-  ];
+    { 
+      category: "Frontend", 
+      icon: Code, 
+      items: [
+        "HTML5", 
+        "CSS3", 
+        "JavaScript (ES6+)", 
+        "TypeScript", 
+        "React", 
+        "Next.js", 
+        "Vue.js", 
+        "Angular", 
+        "Tailwind CSS", 
+        "Bootstrap", 
+        "SASS/SCSS", 
+        "Redux", 
+        "React Native"
+      ] 
+    },    
+    { 
+      category: "Backend", 
+      icon: Server, 
+      items: [
+        "Node.js", 
+        "Express.js", 
+        "Python", 
+        "Django", 
+        "Flask", 
+        "Java", 
+        "Spring Boot", 
+        "PHP", 
+        "Laravel", 
+        "Ruby", 
+        "Ruby on Rails", 
+        "C#", 
+        ".NET Core", 
+        "Go", 
+        "PostgreSQL", 
+        "MySQL", 
+        "MongoDB", 
+        "SQLite", 
+        "GraphQL", 
+        "REST APIs"
+      ] 
+    },   
+    { 
+      category: "DevOps & Cloud", 
+      icon: Wrench, 
+      items: [
+        "Docker", 
+        "Kubernetes", 
+        "CI/CD (GitHub Actions, GitLab CI, Jenkins)", 
+        "AWS (EC2, S3, RDS, Lambda)", 
+        "Google Cloud Platform (GCP)", 
+        "Microsoft Azure", 
+        "Terraform", 
+        "Ansible", 
+        "Linux/Unix", 
+        "Nginx", 
+        "Apache"
+      ] 
+    }, 
+    { 
+      category: "Design", 
+      icon: Palette, 
+      items: [
+        "Figma", 
+        "Adobe XD", 
+        "Sketch", 
+        "Adobe Illustrator", 
+        "Adobe Photoshop", 
+        "UI/UX", 
+        "Wireframing", 
+        "Prototyping", 
+        "Responsive Design", 
+        "Design Systems"
+      ] 
+    },
+    { 
+      category: "Testing & QA", 
+      icon: CheckCircle, 
+      items: [
+        "Jest", 
+        "Mocha", 
+        "Chai", 
+        "Cypress", 
+        "Selenium", 
+        "Postman", 
+        "JUnit", 
+        "PyTest"
+      ] 
+    },
+    { 
+      category: "Version Control & Collaboration", 
+      icon: GitBranch, 
+      items: [
+        "Git", 
+        "GitHub", 
+        "GitLab", 
+        "Bitbucket", 
+        "Agile/Scrum", 
+        "Jira", 
+        "Trello", 
+        "Slack"
+      ] 
+    },
+    { 
+      category: "Mobile Development", 
+      icon: Smartphone, 
+      items: [
+        "React Native", 
+        "Flutter", 
+        "Swift", 
+        "Kotlin", 
+        "Java (Android)", 
+        "Firebase"
+      ] 
+    }
+   ];
 
   const stats = [
     { icon: Code, label: "Projects Completed", value: "50+" },
     { icon: Users, label: "Happy Clients", value: "30+" },
-    { icon: Award, label: "Years Experience", value: "5+" },
+    { icon: Award, label: "Years Experience", value: "4+" },
     { icon: Coffee, label: "Cups of Coffee", value: "1000+" },
   ];
 
@@ -73,8 +188,8 @@ const About = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-              href="/Anthony Makori Latest CV.docx"
-              download="Anthony Makori Latest CV.docx"
+              href="/ANTHONY_MAKORI_CV.docx"
+              download="ANTHONY_MAKORI_CV.docx"
               className="inline-block"
             >
               <Button 

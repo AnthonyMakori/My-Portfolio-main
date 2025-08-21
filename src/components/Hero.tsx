@@ -48,8 +48,8 @@ const Hero = () => {
             </Button>
             
             <a
-              href="/tonny resume.docx"
-              download="tonny resume.docx"
+              href="/ANTHONY_MAKORI_CV.docx"
+              download="ANTHONY_MAKORI_CV.docx"
               className="inline-block"
             >
               <Button 
