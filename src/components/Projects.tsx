@@ -2,18 +2,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import project1 from "@/assets/project-1.jpg";
+import project1 from "@/assets/project-1.png";
 import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import project3 from "@/assets/project-3.png";
 import project4 from "@/assets/project-4.png";
 import project5 from "@/assets/project-5.jpg";
-import project6 from "@/assets/project-6.jpg";
+import project6 from "@/assets/project-6.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce solution with advanced filtering, payment integration, and admin dashboard.",
+      title: "E-CycleLink",
+      description: "A modern e-waste dispose and collect platform that entirely simplifies the complete process and ensuring salers earn carbon credits from the sales and can later use the credits for purchases. This greatly encourages polution reduction to the environment",
       image: project1,
       tech: ["React", "Node.js", "Stripe", "MongoDB"],
       liveUrl: "#",
@@ -28,11 +28,11 @@ const Projects = () => {
       githubUrl: "#",
     },
     {
-      title: "Social Media Platform",
-      description: "Full-featured social platform with posts, stories, messaging, and real-time notifications.",
+      title: "Movie Streaming Platform",
+      description: "Full-featured movie streaming platform that enables users to purchase and stream their favourite local films",
       image: project3,
       tech: ["React", "Firebase", "Socket.io", "Tailwind"],
-      liveUrl: "#",
+      liveUrl: "https://www.falconeyephilmz.com/",
       githubUrl: "#",
     },
     {
@@ -52,8 +52,8 @@ const Projects = () => {
       githubUrl: "#",
     },
     {
-      title: "AI Chatbot Interface",
-      description: "Intelligent chatbot with natural language processing and contextual responses intergrated in AI financial advisor. Helps users to plan and manage their funds effectively in real time.",
+      title: "Hotel management system",
+      description: "A smart hotel management system that covers both accomodation and Menu items, Users get to scan table QR codes and make order placements, this way reducing paper work and up and down order taking movements while also properly tracking every activity in the hotel",
       image: project6,
       tech: ["React", "OpenAI", "Node.js", "WebSocket"],
       liveUrl: "#",
