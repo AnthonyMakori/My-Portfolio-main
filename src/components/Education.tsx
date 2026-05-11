@@ -4,79 +4,145 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 
 const Education = () => {
   const education = [
-    {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "Masinde Muliro University Of Science and Technology",
-      location: "Kakamega, Kenya",
-      gpa: "3.8/4.0",
-      achievements: ["New Technology Analyst", "Innovation Academy Challenge Winner", "Best Project Development", "Deans Merit List 2019/2020 Academic Year"],
-      description:
-        "Specialized in Software Engineering and Web Development. Completed capstone projects on AI-powered web applications. Learnt and Developed using different progamming technologies and languages.",
-      certifications: ["C", "C++", "Java", "Python", "OOP", "HTML5", "SQL", "SQLite", "Database"],
-    },
-    {
-      degree: "Web3 Development Bootcamp",
-      institution: "Memoi Africa",
-      location: "Online",
-      gpa: "4.0/4.0",
-      achievements: ["Top Graduate", "Best Final Project"],
-      description:
-        "Intensive 6-month program covering modern web technologies including React, Node.js, and cloud deployment.",
-      certifications: ["BlockChain", "Solidity", "Smart Contracts", "Web3.js", "Ethereum", "IPFS", "NFTs", "JavaScript", "Node.js",],
-    },
-    {
-      degree: "Full Stack Web Development Bootcamp",
-      institution: "Code Academy",
-      location: "Online",
-      gpa: "4.0/4.0",
-      achievements: ["Top Graduate", "Best Final Project"],
-      description:
-        "Intensive 6-month program covering modern web technologies including React, Node.js, and cloud deployment.",
-      certifications: ["SDLC", "HTML5", "CSS3", "JavaScript", "Bootstrap", "REST APIs", "SOAP", "laravel", "PHP", "CodeIgniter", "C#"],
-    },
-    {
-      degree: "Full Stack Web Development Bootcamp",
-      institution: "W3 Schools",
-      location: "Online",
-      gpa: "4.0/4.0",
-      achievements: ["Top Graduate", "Best Final Project"],
-      description:
-        "Intensive 6-month program covering modern web technologies including React, Node.js, and cloud deployment.",
-      certifications: ["SDLC", "HTML5", "CSS3", "JavaScript", "Bootstrap", "REST APIs", "SOAP", "laravel", "PHP", "CodeIgniter", "C#"],
+  {
+    degree: "Bachelor of Science in Computer Science",
+    institution: "Masinde Muliro University Of Science and Technology",
+    location: "Kakamega, Kenya",
+    gpa: "3.8/4.0",
+    achievements: [
+      "New Technology Analyst",
+      "Innovation Academy Challenge Winner",
+      "Best Project Development",
+      "Dean’s Merit List 2019/2020 Academic Year",
+    ],
+    description:
+      "Specialized in Software Engineering and Web Development with strong focus on AI-powered applications, database systems, and scalable web technologies. Developed multiple academic and practical projects using modern programming languages and software development methodologies.",
+    certifications: [
+      "C",
+      "C++",
+      "Java",
+      "Python",
+      "OOP",
+      "HTML5",
+      "SQL",
+      "SQLite",
+      "Database",
+    ],
+  },
 
-    },
-    {
-      degree: "Mobile Development",
-      institution: "Amazon",
-      location: "Online",
-      gpa: "4.0/4.0",
-      achievements: ["Top Graduate", "Best Final Project"],
-      description:
-        "Intensive 6-month program covering modern web technologies including React, Node.js, and cloud deployment.",
-      certifications: ["Android Development", "XML", "HTML5", "CSS3", "React.Js", "JavaScript"],
+  {
+    degree: "Web3 Development Bootcamp",
+    institution: "Memoi Africa",
+    location: "Online",
+    gpa: "4.0/4.0",
+    achievements: ["Top Graduate", "Best Final Project"],
+    description:
+      "Completed an intensive Web3 development program focused on blockchain technologies, decentralized applications (dApps), smart contracts, and Ethereum ecosystem development using modern JavaScript frameworks and Web3 tools.",
+    certifications: [
+      "Blockchain",
+      "Solidity",
+      "Smart Contracts",
+      "Web3.js",
+      "Ethereum",
+      "IPFS",
+      "NFTs",
+      "JavaScript",
+      "Node.js",
+    ],
+  },
 
-    },
-    {
-      degree: "Mobile Development Bootcamp",
-      institution: "Devtown",
-      location: "Online",
-      gpa: "4.0/4.0",
-      achievements: ["Top Graduate", "Best Final Project"],
-      description:
-        "Intensive 6-month program covering modern web technologies including React, Node.js, and cloud deployment.",
-      certifications: ["React.Js", "Python", "Flutter", "DevOps", "JavaScript", "AI"],
+  {
+    degree: "Full Stack Web Development Bootcamp",
+    institution: "Code Academy",
+    location: "Online",
+    gpa: "4.0/4.0",
+    achievements: ["Top Graduate", "Best Final Project"],
+    description:
+      "Gained hands-on experience in full stack web development including frontend and backend technologies, API development, database integration, and modern software development lifecycle practices.",
+    certifications: [
+      "SDLC",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "REST APIs",
+      "SOAP",
+      "Laravel",
+      "PHP",
+      "CodeIgniter",
+      "C#",
+    ],
+  },
 
-    },
-    {
-      degree: "High School Diploma",
-      institution: "Kisii High School",
-      location: "Kisii, Kenya",
-      gpa: "3.9/4.0",
-      achievements: ["Valedictorian", "National Honor Society"],
-      description:
-        "Advanced Placement courses in Computer Science and Mathematics.",
-    },
-  ];
+  {
+    degree: "Full Stack Web Development Bootcamp",
+    institution: "W3Schools",
+    location: "Online",
+    gpa: "4.0/4.0",
+    achievements: ["Top Graduate", "Best Final Project"],
+    description:
+      "Completed advanced online training in full stack development with emphasis on responsive web design, backend integration, API handling, and practical implementation of modern development frameworks.",
+    certifications: [
+      "SDLC",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "REST APIs",
+      "SOAP",
+      "Laravel",
+      "PHP",
+      "CodeIgniter",
+      "C#",
+    ],
+  },
+
+  {
+    degree: "Mobile Development",
+    institution: "Amazon",
+    location: "Online",
+    gpa: "4.0/4.0",
+    achievements: ["Top Graduate", "Best Final Project"],
+    description:
+      "Studied mobile application development concepts including Android UI design, responsive mobile interfaces, JavaScript frameworks, and cross-platform application development methodologies.",
+    certifications: [
+      "Android Development",
+      "XML",
+      "HTML5",
+      "CSS3",
+      "React.js",
+      "JavaScript",
+    ],
+  },
+
+  {
+    degree: "Mobile Development Bootcamp",
+    institution: "Devtown",
+    location: "Online",
+    gpa: "4.0/4.0",
+    achievements: ["Top Graduate", "Best Final Project"],
+    description:
+      "Completed a practical mobile and software development bootcamp covering Flutter, React.js, DevOps practices, Python programming, and AI integration in modern applications.",
+    certifications: [
+      "React.js",
+      "Python",
+      "Flutter",
+      "DevOps",
+      "JavaScript",
+      "AI",
+    ],
+  },
+
+  {
+    degree: "High School Diploma",
+    institution: "Kisii High School",
+    location: "Kisii, Kenya",
+    gpa: "3.9/4.0",
+    achievements: ["Valedictorian", "National Honor Society"],
+    description:
+      "Completed secondary education with strong academic performance in Mathematics, Computer Studies, and Sciences while actively participating in leadership and academic excellence programs.",
+  },
+];
 
   const certifications = [
     "AWS Certified Solutions Architect",

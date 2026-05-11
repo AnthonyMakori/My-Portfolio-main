@@ -5,7 +5,7 @@ import { Calendar, MapPin, Briefcase, TrendingUp } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Engineer",
+      title: "Software Engineer {Attachment}",
       company: "Kenya Revenue Authority (KRA)",
       department: "iTax Department ",
       period: "2025",
@@ -22,11 +22,11 @@ const Experience = () => {
       technologies: ["Python", "R", "SQL", "Machine Learning", "Power BI", "Azure","Laravel", "React", "Node.js", "Docker", "Kubernetes"]
     },
     {
-      title: "Full Stack Software Developer",
+      title: "Full Stack Software Developer {Attachment}",
       company: "Kenya Revenue Authority (KRA)",
       department: "Data Science Department",
       location: "Nairobi, Kenya",
-      period: "2024-2025",
+      period: "2025",
       description: "contributed to the design and development of mission-critical platforms supporting tax compliance, revenue collection, and data-driven decision-making.",
       achievements: [
         "Developed a taxpayer-centric system to streamline interactions, case management, and compliance support.",
@@ -37,41 +37,127 @@ const Experience = () => {
       technologies: ["Excel", "SPSS", "Tableau", "SQL", "Statistical Analysis","Django", "React","Laravel","Vue.js"]
     },
     {
-      title: "Team Lead",
-      company: "Cybermonk Software Development ",
-      department: "Software Development",
-      location: "Mombasa, Kenya",
-      period: "2024",
-      type: "Full Time",
-      description: "delivering enterprise-grade platforms that enhanced operational efficiency for clients in sectors such as logistics, fintech, and hospitality.",
-      achievements: [
-        "Transformed a low-performing team into a high-output unit, raising sprint completion rates from 40% to 95% within four months through process restructuring, coaching, and agile discipline.",
-        "Established mentorship and peer-learning programs that elevated technical expertise and supported the career growth of junior engineers.",
-        "Designed and deployed cloud-native platforms tailored for high-volume, real-time operations common in regional e-commerce and financial services.",
-        "Delivered live tracking systems using WebSocket technology, enabling real-time visibility for logistics and transport clients with large concurrent user bases",
-        "Built and managed automated CI/CD pipelines that reduced release cycles from hours to minutes, significantly accelerating client delivery timelines.",
-        "Delivered scalable digital solutions that reduced operational costs and improved ROI for Mombasa-based and regional clients."
-      ],
-      technologies: ["React", "Node.js", "TypeScript", "MongoDB", "AWS"]
-    },
-    {
-      title: "Senior Software Engineer",
-      company: "Seven Seas Technologies (SST Group)",
-      department: "Development Team",
-      location: "Nairobi, Kenya",
-      period: "2024",
-      type: "Full-time",
-      description: "Engineered large-scale enterprise applications supporting healthcare and financial service operations, with a focus on reliability, security, and compliance",
-      achievements: [
-        "Engineered large-scale enterprise applications supporting healthcare and financial service operations, with a focus on reliability, security, and compliance.",
-        "Modernized legacy platforms by migrating them to cloud-native architectures, improving system resilience and reducing infrastructure costs.",
-        "Developed and deployed API-first solutions, enabling seamless connectivity between government, financial, and healthcare platforms.",
-        "Integrated biometric and identity-verification systems to strengthen compliance and improve user authentication.",
-        "Introduced continuous testing frameworks, significantly improving defect detection during early development stages.",
-        "Led technical workshops for cross-functional teams, sharing best practices and reinforcing engineering standards."
-      ],
-      technologies: ["JavaScript", "PHP", "MySQL", "Bootstrap", "Git"]
-    }
+  title: "Freelance Full Stack Software Developer",
+  company: "Upwork",
+  department: "Software Development",
+  location: "Remote",
+  period: "2023 - 2024",
+  type: "Freelance",
+  description:
+    "Developed and maintained custom web and mobile applications for international clients across multiple industries including fintech, healthcare, education, ecommerce, hospitality, investment management, and retail systems. Delivered scalable, secure, and user-focused digital solutions while managing the complete software development lifecycle from planning and UI/UX implementation to deployment, optimization, and maintenance.",
+  achievements: [
+    "Designed and implemented custom web applications tailored to diverse client business requirements and operational workflows.",
+    "Managed the complete software development lifecycle including system design, coding, debugging, testing, deployment, and maintenance.",
+    "Developed business websites, payment gateway integrations, investment platforms, school management systems, hospital systems, pharmacy systems, POS systems, and ecommerce platforms.",
+    "Built responsive and user-friendly interfaces using modern frontend technologies and markup languages such as HTML, CSS, JavaScript, and React.",
+    "Optimized web applications for maximum speed, scalability, reliability, and cross-device compatibility.",
+    "Integrated REST APIs and external data sources to support real-time system functionality and third-party services.",
+    "Collaborated with backend developers, UI/UX designers, and cross-functional remote teams to improve usability and application performance.",
+    "Created reusable components and libraries to improve development efficiency and maintainability across projects.",
+    "Validated and secured user input before backend submission to enhance application security and data integrity.",
+    "Designed and implemented mobile-based and Android-compatible features for improved accessibility and user experience.",
+    "Performed unit testing, bug fixing, troubleshooting, and continuous performance improvements for deployed applications.",
+    "Prepared functional requirement documents, mockups, guides, and prototypes to support project planning and client communication.",
+    "Continuously researched and implemented emerging technologies and development practices to maximize software efficiency and delivery quality.",
+    "Maintained high-quality graphic standards, brand consistency, and responsive UI/UX implementation across client projects."
+  ],
+  technologies: [
+    "React",
+    "Next.js",
+    "Node.js",
+    "Laravel",
+    "PHP",
+    "JavaScript",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "Bootstrap",
+    "Tailwind CSS",
+    "MongoDB",
+    "MySQL",
+    "REST APIs",
+    "WebSockets",
+    "Android",
+    "Firebase",
+    "Git",
+    "AWS"
+  ]
+},
+   {
+  title: "Full Stack Software Developer",
+  company: "Sahara Ventures",
+  department: "Software Development",
+  location: "Nairobi, Kenya",
+  period: "2023",
+  type: "Full-time",
+  description:
+    "Worked as a Full Stack Software Developer collaborating with cross-functional teams to design, develop, test, and maintain enterprise applications and automation solutions. Focused on software quality assurance, workflow optimization, debugging, and delivering scalable solutions aligned with client and business requirements.",
+  achievements: [
+    "Collaborated with cross-functional teams to review project requirements, technical specifications, and software designs while providing practical implementation feedback.",
+    "Prepared structured test plans, testing strategies, and detailed test cases to ensure software reliability and performance.",
+    "Coordinated software testing activities by estimating timelines, setting development priorities, and managing project deliverables.",
+    "Designed and developed websites, enterprise platforms, and workflow automation scripts to improve operational efficiency.",
+    "Identified, documented, tracked, and resolved software defects to enhance application stability and usability.",
+    "Performed regression testing on bug fixes to ensure product consistency and minimize recurring software issues.",
+    "Implemented testing processes and quality assurance practices for both new and existing software projects.",
+    "Collaborated with product managers, developers, and remote teams to define system requirements and optimize project execution.",
+    "Monitored debugging processes and optimized software solutions to improve performance and responsiveness.",
+    "Investigated root causes of software issues and provided guidance and support for end-users during solution adoption.",
+    "Tracked QA metrics including defect density, issue resolution rates, and open bug counts to monitor software quality improvements.",
+    "Researched and implemented modern testing tools, methodologies, and best practices to improve product standards and development efficiency."
+  ],
+  technologies: [
+    "JavaScript",
+    "PHP",
+    "Laravel",
+    "MySQL",
+    "HTML5",
+    "CSS3",
+    "Bootstrap",
+    "Git",
+    "REST APIs",
+    "Automation Scripts",
+    "QA Testing",
+    "Software Debugging"
+  ]
+},
+{
+  title: "Junior Software Engineer",
+  company: "TechBridge Solutions",
+  department: "Software Engineering",
+  location: "Nairobi, Kenya",
+  period: "2024",
+  type: "Full-time",
+  description:
+    "Supported the development and deployment of secure and scalable business applications for local clients across multiple sectors. Focused on software implementation, API integrations, debugging, testing, and system optimization to improve operational performance and customer experience.",
+  achievements: [
+    "Designed and deployed customized business applications tailored to client operational requirements and business processes.",
+    "Integrated M-Pesa APIs including C2B, B2C, and STK Push to support seamless and secure digital payment processing.",
+    "Built and implemented School Management Systems, Property Rental Platforms, CRM solutions, and Project Tracking applications for local organizations.",
+    "Installed, configured, customized, and tested software systems to ensure smooth deployment and high user satisfaction.",
+    "Collaborated closely with stakeholders to provide project updates, gather requirements, and resolve software-related challenges.",
+    "Worked alongside development and QA teams to deliver secure, scalable, and high-performance software solutions.",
+    "Conducted root cause analysis during debugging sessions, documenting software anomalies and implementing effective fixes.",
+    "Improved application reliability and system performance by optimizing existing features and resolving critical bugs before production release.",
+    "Participated in end-to-end software testing and validation to ensure quality standards and functional consistency.",
+    "Supported continuous improvement initiatives by enhancing workflows, refining features, and implementing performance optimizations."
+  ],
+  technologies: [
+    "JavaScript",
+    "React",
+    "PHP",
+    "Laravel",
+    "MySQL",
+    "M-Pesa APIs",
+    "HTML5",
+    "CSS3",
+    "Bootstrap",
+    "REST APIs",
+    "Git",
+    "Software Testing",
+    "Debugging"
+  ]
+},
   ];
 
   const getTypeColor = (type: string) => {
