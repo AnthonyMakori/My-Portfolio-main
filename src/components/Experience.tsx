@@ -5,7 +5,7 @@ import { Calendar, MapPin, Briefcase, TrendingUp } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Engineer {Attachment}",
+      title: "Software Engineer",
       company: "Kenya Revenue Authority (KRA)",
       department: "iTax Department ",
       period: "2025",
@@ -22,7 +22,7 @@ const Experience = () => {
       technologies: ["Python", "R", "SQL", "Machine Learning", "Power BI", "Azure","Laravel", "React", "Node.js", "Docker", "Kubernetes"]
     },
     {
-      title: "Full Stack Software Developer {Attachment}",
+      title: "Full Stack Software Developer",
       company: "Kenya Revenue Authority (KRA)",
       department: "Data Science Department",
       location: "Nairobi, Kenya",

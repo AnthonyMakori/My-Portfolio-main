@@ -55,7 +55,7 @@ const Education = () => {
     degree: "Full Stack Web Development Bootcamp",
     institution: "Code Academy",
     location: "Online",
-    gpa: "4.0/4.0",
+    gpa: "3.7/4.0",
     achievements: ["Top Graduate", "Best Final Project"],
     description:
       "Gained hands-on experience in full stack web development including frontend and backend technologies, API development, database integration, and modern software development lifecycle practices.",
@@ -78,7 +78,7 @@ const Education = () => {
     degree: "Full Stack Web Development Bootcamp",
     institution: "W3Schools",
     location: "Online",
-    gpa: "4.0/4.0",
+    gpa: "3.9/4.0",
     achievements: ["Top Graduate", "Best Final Project"],
     description:
       "Completed advanced online training in full stack development with emphasis on responsive web design, backend integration, API handling, and practical implementation of modern development frameworks.",
