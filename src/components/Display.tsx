@@ -1,37 +1,61 @@
 // components/Display.tsx
-import React, { useEffect, useRef, useState } from 'react';
-import { ChefHat, Sparkles } from 'lucide-react';
+import React, { useEffect, useRef, useState } from "react";
 
+// =========================
+// Import Images
+// =========================
+import background from "../assets/back/back.jpg";
+
+import blueF from "../assets/cars/blue f.jpg";
+import blueS from "../assets/cars/blue s.jpeg";
+import dark from "../assets/cars/dark.jpg";
+import front from "../assets/cars/front.jpg";
+import green from "../assets/cars/green.jpg";
+import grey from "../assets/cars/grey.jpg";
+import lambo1 from "../assets/cars/lambo1.jpg";
+import lambos from "../assets/cars/lambos.jpg";
+import large from "../assets/cars/large.jpg";
+import redF from "../assets/cars/red f.jpg";
+import red3 from "../assets/cars/red3.jpg";
+import redone from "../assets/cars/redone.jpeg";
+import sportBlue from "../assets/cars/sport blue.jpg";
+import sportG from "../assets/cars/sport g.jpg";
+import whiteF from "../assets/cars/white f.jpg";
+import wine from "../assets/cars/wine.jpg";
+import white from "../assets/cars/white.jpg";
+
+// =========================
+// Images Array
+// =========================
 const imageData = [
-  { src: '/src/assets/cars/blue f.jpg' },
-  { src: '/src/assets/cars/blue s.jpeg' },
-  { src: '/src/assets/cars/dark.jpg', },
-  { src: '/src/assets/cars/front.jpg' },
-  { src: '/src/assets/cars/green.jpg'},
-  { src: '/src/assets/cars/grey.jpg'},
-  { src: '/src/assets/cars/lambo1.jpg' },
-  { src: '/src/assets/cars/lambos.jpg' },
-  { src: '/src/assets/cars/large.jpg' },
-  { src: '/src/assets/cars/red f.jpg'},
-  { src: '/src/assets/cars/red3.jpg' },
-  { src: '/src/assets/cars/redone.jpeg' },
-  { src: '/src/assets/cars/sport blue.jpg' },
-  { src: '/src/assets/cars/sport g.jpg' },
-  { src: '/src/assets/cars/white f.jpg' },
-  { src: '/src/assets/cars/wine.jpg' },
-  { src: '/src/assets/cars/white.jpg' }
+  { src: blueF },
+  { src: blueS },
+  { src: dark },
+  { src: front },
+  { src: green },
+  { src: grey },
+  { src: lambo1 },
+  { src: lambos },
+  { src: large },
+  { src: redF },
+  { src: red3 },
+  { src: redone },
+  { src: sportBlue },
+  { src: sportG },
+  { src: whiteF },
+  { src: wine },
+  { src: white },
 ];
 
 const Display: React.FC = () => {
   const [degrees, setDegrees] = useState(0);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const boxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setDegrees((prev) => prev - 45);
-      setCurrentIndex((prev) => (prev + 1) % imageData.length);
     }, 2000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -42,70 +66,69 @@ const Display: React.FC = () => {
   }, [degrees]);
 
   const handleNext = () => {
-    setDegrees((d) => d - 45);
-    setCurrentIndex((i) => (i + 1) % imageData.length);
+    setDegrees((prev) => prev - 45);
   };
 
   const handlePrev = () => {
-    setDegrees((d) => d + 45);
-    setCurrentIndex((i) => (i - 1 + imageData.length) % imageData.length);
+    setDegrees((prev) => prev + 45);
   };
 
   const containerStyle: React.CSSProperties = {
-    position: 'relative',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
+    position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
   };
 
   const boxStyle: React.CSSProperties = {
-    width: '200px',
-    height: '200px',
-    position: 'relative',
-    transformStyle: 'preserve-3d',
+    width: "200px",
+    height: "200px",
+    position: "relative",
+    transformStyle: "preserve-3d",
     transform: `perspective(1000px) rotateY(${degrees}deg)`,
-    transition: 'transform 1.5s'
+    transition: "transform 1.5s",
   };
 
   const btnsStyle: React.CSSProperties = {
-    position: 'absolute',
-    bottom: '-100px',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    display: 'flex',
-    gap: '30px'
+    position: "absolute",
+    bottom: "-100px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    display: "flex",
+    gap: "30px",
   };
 
   const btnStyle: React.CSSProperties = {
-    width: '60px',
-    height: '60px',
-    border: '2px solid #fff',
-    borderRadius: '50%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    cursor: 'pointer',
-    position: 'relative'
+    width: "60px",
+    height: "60px",
+    border: "2px solid #fff",
+    borderRadius: "50%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    cursor: "pointer",
+    position: "relative",
+    background: "rgba(255,255,255,0.08)",
+    backdropFilter: "blur(6px)",
   };
 
   const arrowBase: React.CSSProperties = {
-    content: "''",
-    position: 'absolute',
-    width: '15%',
-    height: '15%',
-    borderTop: '3px solid #fff',
-    borderRight: '3px solid #fff'
+    position: "absolute",
+    width: "15%",
+    height: "15%",
+    borderTop: "3px solid #fff",
+    borderRight: "3px solid #fff",
   };
 
-  const nextArrow = {
+  const nextArrow: React.CSSProperties = {
     ...arrowBase,
-    transform: 'rotate(45deg) translate(-2.5px, 2.5px)'
+    transform: "rotate(45deg) translate(-2.5px, 2.5px)",
   };
 
-  const prevArrow = {
+  const prevArrow: React.CSSProperties = {
     ...arrowBase,
-    transform: 'rotate(225deg) translate(-2.5px, 2.5px)'
+    transform: "rotate(225deg) translate(-2.5px, 2.5px)",
   };
 
   return (
@@ -114,56 +137,58 @@ const Display: React.FC = () => {
       style={{
         margin: 0,
         padding: 0,
-        boxSizing: 'border-box',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        minHeight: '100vh',
-        background: `url('src/assets/back/back.jpg') no-repeat center center`,
-        backgroundSize: 'cover',
-        transformStyle: 'preserve-3d',
-        overflow: 'hidden'
+        boxSizing: "border-box",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        minHeight: "100vh",
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        overflow: "hidden",
       }}
     >
-      {/* Carousel Section */}
+      {/* Carousel */}
       <div style={containerStyle}>
         <div ref={boxRef} style={boxStyle}>
-          {imageData.map((item, i) => (
+          {imageData.map((item, index) => (
             <span
-              key={i}
+              key={index}
               style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                transformOrigin: 'center',
-                transformStyle: 'preserve-3d',
-                transform: `rotateY(${(i + 1) * 45}deg) translateZ(300px)`,
-                WebkitBoxReflect: 'below 0px linear-gradient(transparent, #0004)'
+                position: "absolute",
+                inset: 0,
+                transformOrigin: "center",
+                transformStyle: "preserve-3d",
+                transform: `rotateY(${index * (360 / imageData.length)}deg) translateZ(300px)`,
+                WebkitBoxReflect:
+                  "below 0px linear-gradient(transparent, transparent, #0004)",
               }}
             >
               <img
                 src={item.src}
+                alt={`Car ${index + 1}`}
+                draggable={false}
                 style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  userSelect: 'none'
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: "10px",
+                  userSelect: "none",
+                  pointerEvents: "none",
                 }}
               />
             </span>
           ))}
         </div>
 
-        {/* Buttons */}
+        {/* Navigation Buttons */}
         <div style={btnsStyle}>
           <div style={btnStyle} onClick={handlePrev}>
             <div style={prevArrow}></div>
           </div>
+
           <div style={btnStyle} onClick={handleNext}>
             <div style={nextArrow}></div>
           </div>
