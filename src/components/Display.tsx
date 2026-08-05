@@ -11,7 +11,7 @@ import blueS from "../assets/cars/blue s.jpeg";
 import dark from "../assets/cars/dark.jpg";
 import front from "../assets/cars/front.jpg";
 import green from "../assets/cars/green.png";
-import grey from "../assets/cars/grey.jpg";
+import grey from "../assets/cars/grey f.jpg";
 import lambo1 from "../assets/cars/lambo1.jpg";
 import lambos from "../assets/cars/lambos.jpg";
 import large from "../assets/cars/large.jpg";
