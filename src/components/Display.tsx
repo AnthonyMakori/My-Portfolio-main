@@ -47,86 +47,39 @@ const imageData = [
 
 const Display: React.FC = () => {
   const [degrees, setDegrees] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const boxRef = useRef<HTMLDivElement>(null);
 
+  const ROTATE_STEP = 360 / imageData.length;
+
+  // =========================
+  // Auto Rotate
+  // =========================
   useEffect(() => {
     const interval = setInterval(() => {
-      setDegrees((prev) => prev - 45);
-    }, 2000);
+      setDegrees((prev) => prev - ROTATE_STEP);
+      setCurrentIndex((prev) => (prev + 1) % imageData.length);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
     if (boxRef.current) {
-      boxRef.current.style.transform = `perspective(1000px) rotateY(${degrees}deg)`;
+      boxRef.current.style.transform = `perspective(1200px) rotateY(${degrees}deg)`;
     }
   }, [degrees]);
 
   const handleNext = () => {
-    setDegrees((prev) => prev - 45);
+    setDegrees((prev) => prev - ROTATE_STEP);
+    setCurrentIndex((prev) => (prev + 1) % imageData.length);
   };
 
   const handlePrev = () => {
-    setDegrees((prev) => prev + 45);
-  };
-
-  const containerStyle: React.CSSProperties = {
-    position: "relative",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  };
-
-  const boxStyle: React.CSSProperties = {
-    width: "200px",
-    height: "200px",
-    position: "relative",
-    transformStyle: "preserve-3d",
-    transform: `perspective(1000px) rotateY(${degrees}deg)`,
-    transition: "transform 1.5s",
-  };
-
-  const btnsStyle: React.CSSProperties = {
-    position: "absolute",
-    bottom: "-100px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    display: "flex",
-    gap: "30px",
-  };
-
-  const btnStyle: React.CSSProperties = {
-    width: "60px",
-    height: "60px",
-    border: "2px solid #fff",
-    borderRadius: "50%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    cursor: "pointer",
-    position: "relative",
-    background: "rgba(255,255,255,0.08)",
-    backdropFilter: "blur(6px)",
-  };
-
-  const arrowBase: React.CSSProperties = {
-    position: "absolute",
-    width: "15%",
-    height: "15%",
-    borderTop: "3px solid #fff",
-    borderRight: "3px solid #fff",
-  };
-
-  const nextArrow: React.CSSProperties = {
-    ...arrowBase,
-    transform: "rotate(45deg) translate(-2.5px, 2.5px)",
-  };
-
-  const prevArrow: React.CSSProperties = {
-    ...arrowBase,
-    transform: "rotate(225deg) translate(-2.5px, 2.5px)",
+    setDegrees((prev) => prev + ROTATE_STEP);
+    setCurrentIndex(
+      (prev) => (prev - 1 + imageData.length) % imageData.length
+    );
   };
 
   return (
@@ -134,7 +87,7 @@ const Display: React.FC = () => {
       className="w-full px-4"
       style={{
         margin: 0,
-        padding: 0,
+        padding: "40px 20px",
         boxSizing: "border-box",
         display: "flex",
         flexDirection: "column",
@@ -149,48 +102,131 @@ const Display: React.FC = () => {
       }}
     >
       {/* Carousel */}
-      <div style={containerStyle}>
-        <div ref={boxRef} style={boxStyle}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        {/* 3D Carousel */}
+        <div
+          ref={boxRef}
+          style={{
+            width: "260px",
+            height: "360px",
+            position: "relative",
+            transformStyle: "preserve-3d",
+            transform: `perspective(1200px) rotateY(${degrees}deg)`,
+            transition: "transform 1.5s",
+          }}
+        >
           {imageData.map((item, index) => (
             <span
               key={index}
               style={{
                 position: "absolute",
                 inset: 0,
-                transformOrigin: "center",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
                 transformStyle: "preserve-3d",
-                transform: `rotateY(${index * (360 / imageData.length)}deg) translateZ(300px)`,
-                WebkitBoxReflect:
-                  "below 0px linear-gradient(transparent, transparent, #0004)",
+                transform: `rotateY(${
+                  index * ROTATE_STEP
+                }deg) translateZ(380px)`,
+                backfaceVisibility: "hidden",
               }}
             >
-              <img
-                src={item.src}
-                alt={`Car ${index + 1}`}
-                draggable={false}
+              {/* Card */}
+              <div
                 style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  borderRadius: "10px",
-                  userSelect: "none",
-                  pointerEvents: "none",
+                  width: "260px",
+                  height: "360px",
+                  borderRadius: "20px",
+                  overflow: "hidden",
+                  background: "rgba(255,255,255,0.08)",
+                  backdropFilter: "blur(10px)",
+                  WebkitBackdropFilter: "blur(10px)",
+                  boxShadow: "0 20px 40px rgba(0,0,0,.35)",
+                  padding: "10px",
                 }}
-              />
+              >
+                <img
+                  src={item.src}
+                  alt={`Car ${index + 1}`}
+                  draggable={false}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    borderRadius: "14px",
+                    background: "#111",
+                    userSelect: "none",
+                    pointerEvents: "none",
+                  }}
+                />
+              </div>
             </span>
           ))}
         </div>
 
         {/* Navigation Buttons */}
-        <div style={btnsStyle}>
-          <div style={btnStyle} onClick={handlePrev}>
-            <div style={prevArrow}></div>
-          </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "30px",
+            marginTop: "90px",
+          }}
+        >
+          <button
+            onClick={handlePrev}
+            style={{
+              width: "60px",
+              height: "60px",
+              borderRadius: "50%",
+              border: "2px solid rgba(255,255,255,0.5)",
+              background: "rgba(255,255,255,0.08)",
+              backdropFilter: "blur(8px)",
+              color: "#fff",
+              fontSize: "24px",
+              cursor: "pointer",
+              transition: "all .3s ease",
+            }}
+          >
+            ◀
+          </button>
 
-          <div style={btnStyle} onClick={handleNext}>
-            <div style={nextArrow}></div>
-          </div>
+          <button
+            onClick={handleNext}
+            style={{
+              width: "60px",
+              height: "60px",
+              borderRadius: "50%",
+              border: "2px solid rgba(255,255,255,0.5)",
+              background: "rgba(255,255,255,0.08)",
+              backdropFilter: "blur(8px)",
+              color: "#fff",
+              fontSize: "24px",
+              cursor: "pointer",
+              transition: "all .3s ease",
+            }}
+          >
+            ▶
+          </button>
         </div>
+
+        {/* Image Counter */}
+        <p
+          style={{
+            color: "#fff",
+            marginTop: "30px",
+            fontSize: "14px",
+            opacity: 0.8,
+          }}
+        >
+          {currentIndex + 1} / {imageData.length}
+        </p>
       </div>
     </div>
   );
