@@ -21,7 +21,6 @@ import redone from "../assets/cars/redone.jpeg";
 import sportBlue from "../assets/cars/sport blue.jpg";
 import sportG from "../assets/cars/sport g.jpg";
 import whiteF from "../assets/cars/white f.jpg";
-import wine from "../assets/cars/wine.jpg";
 import white from "../assets/cars/white.jpg";
 
 // =========================
@@ -43,7 +42,6 @@ const imageData = [
   { src: sportBlue },
   { src: sportG },
   { src: whiteF },
-  { src: wine },
   { src: white },
 ];
 
